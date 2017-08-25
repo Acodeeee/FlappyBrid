@@ -9,14 +9,14 @@ public class PlayerJump : MonoBehaviour {
 
 	Rigidbody rig;
 	bool isAdd = false;		//判断是否在brid速度为向下时已添加向下速度
-	GameControler gc;
+	GameController gc;
 	int count = 0;	//帽子个数计数
 	float size = 1f;	//帽子尺寸
 	bool isBegin = false;//判断游戏是否开始
 	
 	void Start () {
 		rig = GetComponent<Rigidbody>();
-		gc = GameObject.Find("GameControler").GetComponent<GameControler>();
+		gc = GameObject.Find("GameController").GetComponent<GameController>();
 	}
 	
 
@@ -45,7 +45,7 @@ public class PlayerJump : MonoBehaviour {
 
 		if(Input.GetButtonDown("Jump")){
 			if(!isBegin){
-				gc.GameBegin();//	开始游戏UI操作
+				// gc.GameBegin();//	开始游戏UI操作
 				rig.isKinematic = false;	//解除运动学状态，让brid可以移动
 				isBegin = true;
 			}

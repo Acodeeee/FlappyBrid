@@ -3,12 +3,12 @@ using System.Collections;
 
 public class PipelineTrigger : MonoBehaviour {
 	
-	GameControler gc;
+	GameController gc;
 	GameObject brid;
 
 	void Start()
 	{
-		gc = GameObject.Find("GameControler").GetComponent<GameControler>();
+		gc = GameObject.Find("GameController").GetComponent<GameController>();
 		brid = GameObject.FindWithTag("Player");
 	}
 

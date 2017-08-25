@@ -3,13 +3,13 @@ using System.Collections;
 
 public class GoldRotate : MonoBehaviour {
 
-	GameControler gc;
+	GameController gc;
 	bool isAdd = false;
 	Rigidbody rig;
 
 	void Start()
 	{
-		gc = GameObject.Find("GameControler").GetComponent<GameControler>();
+		gc = GameObject.Find("GameController").GetComponent<GameController>();
 		rig = GetComponent<Rigidbody>();
 	}
 
